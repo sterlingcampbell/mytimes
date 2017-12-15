@@ -47,9 +47,10 @@ nav span a {
 .container {
   position: absolute;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   overflow: scroll;
-  margin-top: 100px;
+  padding-top: 100px;
   width: 1232px;
 }
 
@@ -57,14 +58,20 @@ nav span a {
   border: 1px solid black;
 }
 
-.first-column{
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+.column.large{
   width: 630px;
 }
 
-.second-column {
+.column.medium {
   width: 300px;
 }
 
-.third-column {
+.column.small {
   width: 240px;
 }
